@@ -1,0 +1,52 @@
+SpringBoot is a framework for building a application in Java Language
+SpringBoot makes it easy to create stand alone production application 
+Spring involves lot of manual configuration and lot of exhaustive coding whereareas springboot reduces effort 
+Springboot -> Auto Config , Standalone application 
+We use @SpringBootApplication for setting up manual spring application context and involves automatic component scanning and embedded server config 
+
+
+Spring initializer -> 
+is used to create springboot projects where i can do configs , can add dependencies, can use buildtool
+
+Buildtool : automates project , can compile , do testing , can packaging at one click automatically
+            -> maven , groovy , kotlin
+            -> maven converts projects into jar , var 
+
+To write APIs we use SpringWeb dependency 
+
+JAR -> java archive 
+WAR -> web application archive 
+
+Maven -> Build automation tool and manage dependencies
+        -> Maven opencsv -> have all dependencies , just take one and paste in pom.xml and do maven reload 
+        -> automates validate, compile, test, package, verify, install, deploy
+
+Springboot structure ->
+.idea : contain files regarding the intelligence not related to springboot
+
+
+
+Spring IOC -> 
+Inversion of Control -> when we create object by ourself means we have control on it but when 
+                        we give a control to someone else thats called Inversion
+Dependency Injection -> To implement IOC we need Dependency Injection 
+ EX : 3 classes = controller -> services -> repositroy
+        and controller want objects of services 
+        soo controller class can have objects of services class in 3 way -> 
+        Contructor Injection -> pass the reference of Service 
+        Setter Injection -> setter method for Service 
+        Field Injection -> Not reccomended , loose coupling 
+
+SpringBoot -> it maked the process of setting up any spring project easier and faster 
+        On top of Spring -> Spring Boot works
+
+SpringApplication.run -> responsible for creating container in JVM 
+                        container is objects from selected classes from class list 
+
+IOC container is inside JVM is itself an object and type of it is Application context
+store SpringApplication.run in ApplicationContext 
+getBean is used to call the classes in my java file i reffered 
+and have to mention in reffered file @Component soo that it get called
+
+Spring Application dont call all the classes , only call who have mentioned @Component
+
